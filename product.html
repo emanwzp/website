@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <script src ="reviews.js"></script>
+
+    <script>    /*Script for image changer in nav-images container*/
+			function displayImage(imgSrc) {
+				let curImage = document.getElementById('displayImage');
+			  let source = "images/" + imgSrc;
+				curImage.src = source;
+				curImage.alt = imgSrc;
+			}
+		</script>
+
+
+    <div class = "grid-container main-body">
+        <div class = "grid-container main-container">
+
+
+        <header>
+          <div class = "grid-container">
+            <div class = "grid-y">
+              <a class = "cell large-4" id = "logo" href="index.html"><span class = "robot">Robot </span><span class = "juice">Juice</span><p class = "tagline">fictitious cycle lubricants</p></a>
+            </div>
+          </div>
+
+          <nav class = "grid-container">
+            <div class = "grid-x">
+              <div class = "cell large-12">
+                <div class = "grid-container">
+                  <ul class = "grid-x">
+                    <li class = "cell large-2"> <a href="index.html">Home</a></li>
+                    <li class = "cell large-2 active"> <a href="product.html">Products</a></li>
+                    <li class = "cell large-2"> <a href="">Protect</a></li>
+                    <li class = "cell large-2"> <a href="">Stockists</a></li>
+                    <li class = "cell large-2"> <a href="">Events</a></li>
+                    <li class = "cell large-2"> <a href="">Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        </header>
+
+        <div class = "grid-container buy-section">
+          <div class = "grid-x">
+            <div class = "cell large-8">
+              <div class = "nav-images">
+                <div class = "grid-y">
+                  <!--Images go here  -->
+                  <img src = "images/bikeoilfirst.jpg" alt="bikeoil" onclick="displayImage('bikeoilfirst.jpg');"></img>
+                  <img src = "images/bikeoil.jpg" alt="bikeoil" onclick="displayImage('bikeoil.jpg');"></img>
+                  <img src = "images/bikeoillast.jpg" alt="bikeoil" onclick="displayImage('bikeoillast.jpg');"></img>
+                </div>
+              </div>
+              <div class = "display-image">
+                <!-- Big image goes here -->
+                <img src = "images/bikeoilfirst.jpg" id = "displayImage" alt="bikeoil"></img>
+              </div>
+            </div>
+
+            <div class = "cell large-4">
+
+              <form class = "grid-x buy-form">
+                <h2 class = "cell large-12">Bike Oil</h2>
+                <p class = "cell large-12 price">£99.99</p>
+                <select class ="cell large-6" name = "size">
+                  <option value = "">Size</option>
+                  <option value = "small">Small</option>
+                  <option value = "medium">Medium</option>
+                  <option value = "large">Large</option>
+                </select>
+
+                <select class ="cell large-6 " name = "Qty">
+                  <option value = "">Qty</option>
+                  <option value = "1">1</option>
+                  <option value = "2">2</option>
+                  <option value = "3">3</option>
+                </select>
+                <input class = "cell large-12 btn" type = "submit" value = "Buy Now">
+
+                <h3 class="cell large-12" align="right">FIND NEAREST STOCKLIST<br> SHARE
+                  <a href="https://www.facebook.com"><img src="images/facebook.jpg" alt="Facebook icon"></a>
+                  <a href="https://www.twitter.com"><img src="images/twitter.jpg" alt="Twitter icon"></a>
+                  <a href="https://www.facebook.com"><img src="images/email.jpg" alt="Email icon"></a>
+                </h3>
+                <p class = "cell large-12">Robot Juice bike oil for bicycles stops rust and other corrosion from starting. Applied to already corroding metals it breaks down the corrosion and stops preventing it from building upand protects from point of contact.</p>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class = "grid-container similar-products">
+          <div class = "grid-x">
+            <h2 class="cell large-12">Similar Products</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>ONE</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>TWO</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>THREE</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>FOUR</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>FIVE</h2>
+            <h2 class="cell large-2 box">Sim<br>prod<br>SIX</h2>
+          </div>
+        </div>
+
+        <div class = "gri-container product-reviews">
+          <div class = "grid-x">
+            <h2 class="cell large-12">Product Reviews<span class="rating"> ★★★★★</span></h2>
+            <div class ="cell large-12" id="reviews-container"></div>
+            <div class ="cell large-12 readAllReviews" align="center">
+              <button id = "loadAllReviews-btn" onclick="loadAllReviews();">READ ALL REVIEWS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class = "grid-container related">
+        <div class = "grid-container related-container">
+          <div class = "grid-x">
+            <div class = "cell large-3">
+              <img src = "images/cycling.jpg" alt="cycling"></img>
+            </div>
+            <div class = "cell large-3">
+              <h2>Latest Reviews</h2>
+              <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.</p>
+            </div>
+            <div class = "cell large-3">
+            </div>
+            <div class = "cell large-3 links">
+              <h2>Links</h2>
+              <ul class = "links">
+                <li><a href="https://www.edgehill.ac.uk">Edge Hill University</a></li>
+                <li><a href="">Dave Walsh</a></li>
+                <li><a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a></li>
+                <li><a href="">CIS2120 - Designing for web standards module</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class = "grid-container">
+      <div class = "grid-x">
+        <div class = "cell large-12">
+          <div class = "grid=container footer-container">
+            <div class = "grid-x">
+              <div class = "cell large-8">
+                <p>Robt Juice Fictitious Products Not Ltd. Unit 93/4, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+                <p>Telephone: +44(0)1695 657648 Email:walsh@edgehill.ac.uk</p>
+              </div>
+              <div class = "cell large-4">
+                <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
+                <p>Copyright © 2012 Dave Walsh. Design by Dave Walsh</p>
+              </div>
+            </div>
+          </dic>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>

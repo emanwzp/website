@@ -1,0 +1,118 @@
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cell {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+/**
+ * Classes that implement the horizontal grid
+ */
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+.grid-x > .cell {
+    margin: 0 0.5rem;
+}
+
+/**
+ * Classes that implement the vertical grid
+ */
+.grid-y {
+    display:flex;
+    flex-flow: column nowrap;
+}
+.grid-y > .cell {
+    margin: 0.5rem 0;
+}
+
+/**
+ * Classes that implement the cell sizes small grid cell not included because the website need not be mobile compabitle
+ */
+
+    .cell.large-auto {
+        flex: 1 0 auto;
+        width: auto;
+    }
+    .cell.large-shrink {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    .cell.large-hidden {
+        display: none;
+    }
+    .cell.large-1 {
+        width: calc(8.3333% - 1rem);
+    }
+    .cell.large-2 {
+        width: calc(16.6666% - 1rem);
+    }
+    .cell.large-3 {
+        width: calc(25% - 1rem);
+    }
+    .cell.large-4 {
+        width: calc(33.3333% - 1rem);
+    }
+    .cell.large-5 {
+        width: calc(41.6666% - 1rem);
+    }
+    .cell.large-6 {
+        width: calc(50% - 1rem);
+    }
+    .cell.large-7 {
+        width: calc(58.3333% - 1rem);
+    }
+    .cell.large-8 {
+        width: calc(66.6666% - 1rem);
+    }
+    .cell.large-9 {
+        width: calc(75% - 1rem);
+    }
+    .cell.large-10 {
+        width: calc(83.3333% - 1rem);
+    }
+    .cell.large-11 {
+        width: calc(91.6666% - 1rem);
+    }
+    .cell.large-12 {
+        width: calc(100% - 1rem);
+    }
+
+
+/**
+ * Classes that implement re-ordering , small grid cell not included because the website need not be mobile compabitle
+ */
+
+    .cell.large-order-1 {
+        order: 1;
+    }
+    .cell.large-order-2 {
+        order: 2;
+    }
+    .cell.large-order-3 {
+        order: 3;
+    }
+    .cell.large-order-4 {
+        order: 4;
+    }
+    .cell.large-order-5 {
+        order: 5;
+    }
+    .cell.large-order-6 {
+        order: 6;
+    }
+    .cell.large-order-7 {
+        order: 7;
+    }
+    .cell.large-order-8 {
+        order: 8;
+    }
+    .cell.large-order-9 {
+        order: 9;
+    }
+    .cell.large-order-10 {
+        order: 10;
+    }

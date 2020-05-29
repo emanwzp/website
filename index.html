@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <script src ="poll.js"></script>
+
+    <div class = "grid-container main-body">
+        <div class = "grid-container main-container">
+
+        <header>
+          <div class = "grid-container">
+            <div class = "grid-y">
+              <a class = "cell large-4" id = "logo" href="index.html"><span class = "robot">Robot </span><span class = "juice">Juice</span><p class = "tagline">fictitious cycle lubricants</p></a>
+            </div>
+          </div>
+          <nav class = "grid-container">
+            <div class = "grid-x">
+              <div class = "cell large-12">
+                <div class = "grid-container">
+                  <ul class = "grid-x">
+                    <li class = "cell large-2 active"> <a href="index.html">Home</a></li>
+                    <li class = "cell large-2"> <a href="product.html">Products</a></li>
+                    <li class = "cell large-2"> <a href="">Protect</a></li>
+                    <li class = "cell large-2"> <a href="">Stockists</a></li>
+                    <li class = "cell large-2"> <a href="">Events</a></li>
+                    <li class = "cell large-2"> <a href="">Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="grid-container banner">
+          <div class = "grid-x ">
+            <img class = "cell large-12" src = "images/robot.jpg" alt =  "Robot Juice"></img>
+          </div>
+
+          <div class = "grid-x" align = "center">
+            <h1 class = "cell large-12">Robot Juice is the ultimate fictitious bicyle and motercycle lubricant oils.</h1>
+            <div class = "cell large-12" id="break"></div>
+          </div>
+        </div>
+
+
+        <div class = "grid-container">
+          <section class = "grid-x">
+            <div class = "cell large-3">
+              <div class = "grid-y panel">
+                <h2 class = "cell large-order-2">Bike Oil</h2>
+                <p class = "cell large-order-3">Stops and protects against rust, reduces friction on moving parts and is essencial on any cycle.</p>
+                <img class = "cell large-order-1" src = "images/bikeoil.jpg" alt = "Bike Oil"></img>
+              </div>
+            </div>
+            <div class = "cell large-3">
+              <div class = "grid-y panel">
+                <h2 class = "cell large-order-2">Dry Lubricant</h2>
+                <p class = "cell large-order-3">Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</p>
+                <img class = "cell large-order-1" src = "images/drylubricant.jpg" alt = "Dry Lubricant"></img>
+              </div>
+            </div>
+            <div class = "cell large-3">
+              <div class = "grid-y panel">
+                <h2 class = "cell large-order-2">Wet Lubricant</h2>
+                <p class = "cell large-order-3">A thick, heavy duty lube designed to stick to the chain in wet cnditions. Ideal for extreme weather and long distance riding.</p>
+                <img class = "cell large-order-1" src = "images/wetlubricant.jpg" alt= "Wet Lubricant"></img>
+              </div>
+            </div>
+            <div class = "cell large-3">
+              <div class = "grid-y panel">
+                <h2 class = "cell large-order-2">Product Reviews</h2>
+                <p class = "cell large-order-3">Read what the press and our customers say about our excellent products.</p>
+                <img class = "cell large-order-1" src = "images/productreviews.jpg" alt = "Product Reviews"></img>
+              </div>
+            </div>
+            <div class = "cell large-12" id = "break"></div>
+          </section>
+        </div>
+
+        <article class = "grid-container">
+          <div class = "grid-x">
+            <div class = "cell large-8">
+              <div class = "grid-x">
+                <h2 class = "cell large-12">Latest News</h2>
+                <h3 class = "cell large-12">News item 1</h3>
+                <p class = "cell large-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+                <div class = "cell large-10"></div>
+                <p class = "cell large-2 date">September, 2012</p>
+                <h3 class = "cell large-12">News item 2</h3>
+                <p class = "cell large-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. </p>
+                <div class = "cell large-10"></div>
+                <p class = "cell large-2 date">September, 2012</p>
+                <h3 class = "cell large-12">News item 3</h3>
+                <p class = "cell large-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. </p>
+                <div class = "cell large-10"></div>
+                <p class = "cell large-2 date">September, 2012</p>
+              </div>
+            </div>
+
+            <aside class = "cell large-4">
+              <h2>Reader Poll</h2>
+              <form action = "" id ="poll">
+                <p class = "form">Are Robot Juice the best and most usable and accessible fake oils around?</p>
+                <input type = "radio" name = "choice" value = "yes" onclick="submitAnswer('yes');">Yes<br></input>
+                <input type = "radio" name = "choice" value = "no" onclick="submitAnswer('no');">No<br></input>
+              </form>
+              <h2>Competition</h2>
+              <p>Win absolutely nothing by entering this extremly expensive competition.Robot Juice will not send you a full range of our cycling and motorcyle oils and lubricants as we do not exist. But just for fun...</p>
+              <p>Wich Film is our address made up from?</p>
+              <ol type = "a">
+                <li>Armageddon</li>
+                <li>Harry Potter</li>
+                <li>The simpsons</li>
+              </ol>
+              <p>answer on a postcard please.</p>
+            </aside>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+
+    <div class = "grid-container related">
+        <div class = "grid-container related-container">
+          <div class = "grid-x">
+            <div class = "cell large-3">
+              <img src = "images/cycling.jpg" alt="cycling"></img>
+            </div>
+            <div class = "cell large-3">
+              <h2>Latest Reviews</h2>
+              <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.</p>
+            </div>
+            <div class = "cell large-3"></div>
+            <div class = "cell large-3 links">
+              <h2>Links</h2>
+              <ul class = "links">
+                <li><a href="https://www.edgehill.ac.uk">Edge Hill University</a></li>
+                <li><a href="">Dave Walsh</a></li>
+                <li><a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a></li>
+                <li><a href="">CIS2120 - Designing for web standards module</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class = "grid-container">
+      <div class = "grid-x">
+        <div class = "cell large-12">
+          <div class = "grid=container footer-container">
+            <div class = "grid-x">
+              <div class = "cell large-8">
+                <p>Robt Juice Fictitious Products Not Ltd. Unit 93/4, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+                <p>Telephone: +44(0)1695 657648 Email:walsh@edgehill.ac.uk</p>
+              </div>
+              <div class = "cell large-4">
+                <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
+                <p>Copyright © 2012 Dave Walsh. Design by Dave Walsh</p>
+              </div>
+            </div>
+          </dic>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </body>
+
+</html>

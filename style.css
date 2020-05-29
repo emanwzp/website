@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css?family=Iceberg); /* Imports the fonts required for the styling */
+@import url(https://fonts.googleapis.com/css?family=Damion);
+
+
+/* cleaning any relevant default styling(this is irrelevant if reset.css file is present) */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+body {
+  margin:0;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+button, .btn{
+  cursor: pointer;
+}
+/* Heading tags properties */
+h1 {
+  font-weight: normal;
+  color: #575859;
+  padding: 1.5rem;
+  font-family: 'Iceberg', cursive;
+  font-size: 30px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+
+}
+h2{
+  color:#575859;
+  font-family: 'Iceberg', cursive;
+  font-size: 24px;
+
+}
+h3{
+  color:  #666666;
+  font-family: Arial;
+}
+
+p{
+  font-family: Arial;
+}
+
+
+/* this break ensures that the border line that divides the content is inside the margins of the content, instead of going a bit outside
+can be used wherever necessary, maybe not the most elegant solution*/
+#break{
+  border-bottom: 1px solid #666666;
+}
+
+
+/* styles the main body, equal and relevant to all pages */
+.main-body {
+  background: #eeeeee;
+  border-bottom: 1px solid black;
+}
+
+.main-container {
+  margin: 0 7rem 2.5rem 7rem;
+}
+
+
+
+/* Logo equal and relevant to all pages*/
+#logo{
+  font-size: 3.8rem;
+  padding: 0.33em;
+  font-family: "Damion";
+}
+.robot{
+  color: #C5110B;
+}
+.juice{
+  color: #000000;
+}
+#logo .tagline{
+  font-size: 18%;
+  font-family: "Ariel";
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+
+/* Nav properties equal and relevant to all pages (NEEDS IMPROVEMENT) */
+header ul{
+  list-style-type: none;
+  border-top: 1px solid #C1BEB9;
+  border-bottom: 1px solid #C1BEB9;
+  padding:0.5rem 0;
+}
+header nav a {
+  display: block;
+  color:#C1BEB9;
+  padding: 1rem 0rem;
+}
+header nav a:hover:not(.active){ /*not working for some reason */
+  background: black;
+}
+header nav .active{
+  background: #C5110B;
+}
+header nav li {
+  text-align: center;
+}
+header nav li:not(:last-child){
+  border-right: 1px solid #C1BEB9;
+}
+
+
+
+
+/* related container styling just above the footer, equal and relevant to all pages */
+.related {
+  border-bottom: 1px solid black;
+}
+.related-container{
+  margin: 1.5rem 7rem 1.5rem 7rem;
+  color:#C5110B;
+  font-family: Arial;
+  font-size: 0.85rem;
+}
+.related-container h2{
+  color:#C5110B;
+  font-size: 1.7rem;
+  font-family: Arial;
+  padding-bottom: 0.5rem;
+}
+.related-container a{
+  text-decoration: underline;
+  color:#C5110B;
+
+}
+.related-container li{
+  padding-bottom: 0.5rem;
+  list-style: none;
+}
+.related img{
+  width:9rem;
+  height:13rem;
+}
+
+
+
+/* footer styling , equal and relevant to all pages */
+footer{
+  background: #C5110B;
+}
+.footer-container {
+  margin: 1rem 7rem 2.5rem 7rem;
+}
+.footer-container p{
+  font-size: 95%;
+  margin-bottom: 0.5rem
+}
+
+/********************** Index page focused *********************************/
+
+/* Banner properties for index page */
+.banner img{
+  border-bottom: 8px solid #C1BEB9;
+  height:30rem;
+  width:100%;
+}
+
+
+/*Panel properties*/
+.panel {
+  padding: 2rem 0;
+}
+.panel p{
+  font-size: 85%;
+
+}
+.panel img {
+    width: 100%;
+    height: 9rem;
+    box-shadow: 1px 3px 2px #666666;
+}
+
+
+
+/* article properties only used in the index page so far */
+article{
+  padding-top: 2.5rem;
+  font-size: 95%;
+}
+article .date, article .form{
+  color:#C5110B;
+}
+article .date{
+  font-size: 75%;
+  padding-top: 0.5rem;
+}
+article h3{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+
+/* styles the aside panel in the index page */
+aside{
+  background-color: white;
+  padding: 1rem 1rem 0rem 1rem;
+  font-size: 90%;
+}
+aside h2, aside p, aside form,aside input{
+  padding-bottom: 1rem;
+}
+
+aside ol{
+  padding: 1rem;
+}
+
+
+
+
+/********************** Product Page focused *********************************/
+
+/* form styling - Product page */
+.buy-form select{
+  padding:0.5rem;
+}
+.buy-form .btn{
+  background-color: #C5110B;
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding:0.5rem;
+  border:none;
+}
+
+
+
+/* styling of the images in the product page */
+.nav-images{
+  float:left;
+}
+.nav-images img{
+  margin:0.5rem;
+  width:6rem;
+  height:4rem;
+  border:1px solid #C5110B;
+  cursor: pointer;
+}
+.display-image{
+  float:right;
+}
+.display-image img{
+  margin:0.5rem 0 0.5rem 0;
+  width:31rem;
+  height:20rem;
+}
+
+
+
+/* buy section styling for product page */
+.buy-section{
+  padding: 2rem 0;
+  font-size: 95%;
+  border-bottom: 2px solid #C1BEB9;
+}
+.buy-section h2{
+  padding:0.5rem;
+}
+.buy-section .price{
+  padding: 0 0 0.5rem 0.5rem;
+  color: #C5110B;
+}
+
+.buy-form img{
+  width:1rem;
+  height:1rem;
+}
+
+
+
+
+/* similar products styling for product page */
+.similar-products{
+  padding: 2rem 0;
+  font-size: 95%;
+  border-bottom: 2px solid #C1BEB9;
+}
+.similar-products h2{
+  padding-bottom: 1rem;
+}
+.similar-products .box{
+  background: #70887A;
+  border-radius: 5px;
+  padding: 2rem ;
+  text-align: center;
+}
+
+
+/* reviews section for product page */
+.rating{
+  color: #C5110B;
+}
+.product-reviews h2{
+  padding:1rem 0;
+  border-bottom: 1px solid #C1BEB9;
+}
+.review-container{
+  padding:1rem;
+  text-align: center;
+  border-bottom: 1px solid #C1BEB9;
+}
+.review-container p{
+  padding-bottom: 0.5rem;
+}
+.readAllReviews button{
+  background-color: #C5110B;
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding:0.5rem 2rem;
+  border:none;
+  border-radius: 5px;
+}
